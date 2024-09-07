@@ -151,3 +151,4 @@ df_user_behavior.fillna(df_user_behavior.mean(), inplace=True)
 z_scores = stats.zscore(df_user_behavior.select_dtypes(include=['float64', 'int64']))
 abs_z_scores = np.abs(z_scores)
 df_user_behavior = df_user_behavior[(abs_z_scores < 3).all(axis=1)]
+
