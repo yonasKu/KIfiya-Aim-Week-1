@@ -1,4 +1,5 @@
 myvenv
 data
 .env
-user_engagement_analysis
+*.pyc
+__pycache__/
